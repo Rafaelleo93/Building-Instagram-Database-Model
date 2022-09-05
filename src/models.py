@@ -54,7 +54,7 @@ class Post(Base):
 
 class Media(Base):
     __tablename__ = 'media'
-    id = Column(Integer, primary_key=True,)
+    id = Column(Integer, primary_key=True)
     type = Column(String(250), nullable=False)
     url = Column(String(250), nullable=False )
     post_id = Column(String(250), ForeignKey('post.id'))
